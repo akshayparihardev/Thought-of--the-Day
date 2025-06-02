@@ -1,75 +1,52 @@
-# Four in a Row (Connect Four) - Python CLI Game
+🎮 Four in a Row (Connect Four) – Python CLI Game
+A simple, interactive, and user-friendly command-line (CLI) version of the classic Connect Four game for two players, written in Python.
 
-A simple and interactive command-line (CLI) version of the classic Connect Four game for two players, written in Python.
+📚 About
+Four in a Row (Connect Four) is a timeless two-player game where players take turns dropping discs into a seven-column, six-row grid. The goal is to be the first to connect four of your discs—horizontally, vertically, or diagonally.
 
----
+This project is a clean, CLI-based Python implementation, perfect for local two-player fun, learning, and practice with Python basics.
 
-## 📖 About The Project
+⚙️ Tech Stack
+Language: Python 3
 
-**Four in a Row (Connect Four)** is a classic two-player connection game in which players take turns dropping colored discs into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the lowest available space within the column. The objective is to be the first to form a horizontal, vertical, or diagonal line of four of one's own discs.
+Interface: Command-Line (Terminal/Prompt)
 
-This project is a **CLI-based Python implementation** of the game, designed for local two-player fun and learning. All interaction happens through the terminal or command prompt.
+✨ Features
+Intuitive CLI: Play directly in your terminal.
 
----
+Clear Board Display: The board updates after every move.
 
-## 🛠️ Built With
+Input Validation: Handles invalid inputs and full columns gracefully.
 
-- [Python 3](https://www.python.org/)
+Automatic Piece Placement: Pieces drop to the lowest available spot.
 
----
+Win & Draw Detection: Detects four-in-a-row and tie games.
 
-## ✨ Features
+Replay Support: Play as many rounds as you like.
 
-- **Command-Line Interface:** Play entirely in your terminal or command prompt.
-- **User-Friendly Board Display:** Clear and readable board after every move.
-- **Input Validation:** Handles invalid inputs and full columns gracefully.
-- **Automatic Piece Placement:** Drops the piece to the lowest available spot in the selected column.
-- **Win Detection:** Checks for four-in-a-row horizontally, vertically, and diagonally.
-- **Draw Detection:** Detects and announces a tie if the board is full with no winner.
-- **Replay Option:** Play multiple games in one session.
-- **Graceful Exit:** Quit at any time with `quit` or `Ctrl+C`.
-- **Clear Prompts:** Easy-to-understand instructions and error messages.
+Graceful Exit: Quit anytime with quit or Ctrl+C.
 
----
+Friendly Prompts: Easy-to-understand instructions and error messages.
 
-## 🚀 Getting Started
+🚀 Getting Started
+Prerequisites
+Python 3.x installed on your system
 
-### Prerequisites
+Installation
+bash
+git clone https://github.com/akshayparihardev/Four-in-a-Row-Game-.git
+cd Four-in-a-Row-Game-
+No external dependencies required!
 
-- Python 3.x installed on your system
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/four-in-a-row.git
-   ```
-2. **Navigate to the project directory:**
-   ```bash
-   cd four-in-a-row
-   ```
-3. **(Optional) Create a virtual environment:**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-4. **No external dependencies needed!**
-
----
-
-## 💡 Usage
-
+▶️ Usage
 Run the game with:
 
-```bash
+bash
 python four_in_a_row.py
-```
+Follow the on-screen prompts to play. All game actions and progress are displayed in your terminal.
 
-Follow the on-screen prompts to play. All actions and game progress are displayed in your terminal window.
-
-### Example Gameplay
-
-```
+Example Gameplay
+text
 |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |
@@ -77,25 +54,7 @@ Follow the on-screen prompts to play. All actions and game progress are displaye
 |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |
   1   2   3   4   5   6   7
-
 Player1 X's turn.
 Enter the column Number you want to place the Piece : (1-7) or 'quit' to exit:
-```
 
----
-
-## 🙏 Acknowledgements
-
-- [othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template) for README inspiration
-- Classic Connect Four game
-
----
-
-**Enjoy playing Four in a Row on your command line!**
-
----
-
-> **Note:**  
-> Replace `https://github.com/yourusername/four-in-a-row.git` with your actual GitHub repository URL before publishing.
----
----
+🎉✨ Enjoy playing Four in a Row on your command line! 🕹️🔥
