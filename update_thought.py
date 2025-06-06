@@ -1,13 +1,29 @@
-import requests
-from bs4 import BeautifulSoup
+import datetime
+import random
 
-url = "https://example.com/daily-thought"  # Replace with actual URL
-response = requests.get(url)
-soup = BeautifulSoup(response.text, 'html.parser')
+# List of thoughts (you can expand this significantly!)
+thoughts = [
+    "The only way to do great work is to love what you do. - Steve Jobs",
+    "Believe you can and you're halfway there. - Theodore Roosevelt",
+    # ... (rest of the thoughts list) ...
+]
 
-# Example: Extract the thought from a specific HTML element
-thought = soup.find('div', class_='thought').get_text(strip=True)
+def get_random_thought():
+    return random.choice(thoughts)
 
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(f"# Thought of the Day\n\n{thought}\n")
+def update_readme():
+    current_date = datetime.date.today().strftime("%Y-%m-%d")
+    thought_of_the_day = get_random_thought()
+
+    new_content = f"# Daily Thought and Green Graph!\n\n"
+    new_content += f"**Date:** {current_date}\n\n"
+    new_content += f"**Thought of the Day:**\n> {thought_of_the_day}\n\n"
+    new_content += f"This repository is updated daily to keep my GitHub contributions graph green!"
+
+    with open("README.md", "w") as f:
+        f.write(new_content)
+
+if __name__ == "__main__":
+    update_readme()
+    print("README.md updated with new thought!")
 
