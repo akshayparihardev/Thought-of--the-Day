@@ -1,8 +1,8 @@
-# Daily Thought and Green Graph!
-
+# Daily Thought
 **Date:** 2025-06-06
 
 **Thought of the Day:**
-> The only way to do great work is to love what you do. - Steve Jobs
+> The journey of a thousand miles begins with a single step. - Lao Tzu
 
-This repository is updated daily to keep my GitHub contributions graph green!
+# Thank You !
+# Have a Nice Day !
