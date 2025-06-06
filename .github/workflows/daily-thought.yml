@@ -2,8 +2,8 @@ name: Daily Thought Update
 
 on:
   schedule:
-    # Runs every day at 00:00 UTC
-    - cron: '0 0 * * *'
+    # Runs every day at 06:30 UTC, which is 12:00 PM (noon) IST
+    - cron: '30 6 * * *'
   workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:
