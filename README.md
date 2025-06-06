@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # The Nostalgic Summer Games - Landing Page 🌞🎮
 
 ## Project Description
@@ -50,3 +51,6 @@ This project is currently maintained by Akshay Parihar. While direct contributio
 ## License
 
 This project is licensed under the MIT License - see the `LICENSE` file for details. 📜
+=======
+# Thought-of--the-Day
+>>>>>>> 3d7d69ff356447424f29d23912b2e62ed988b40f
