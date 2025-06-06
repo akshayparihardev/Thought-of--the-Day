@@ -1,22 +1,13 @@
-import random
-import re
+import requests
+from bs4 import BeautifulSoup
 
-# Read all thoughts from thoughts.txt
-with open("thoughts.txt", "r", encoding="utf-8") as f:
-    thoughts = [line.strip() for line in f if line.strip()]
+url = "https://example.com/daily-thought"  # Replace with actual URL
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser')
 
-# Pick a random thought
-thought = random.choice(thoughts)
+# Example: Extract the thought from a specific HTML element
+thought = soup.find('div', class_='thought').get_text(strip=True)
 
-# Read current README.md
-with open("README.md", "r", encoding="utf-8") as f:
-    content = f.read()
-
-# Replace the thought section
-pattern = r'<!-- thought starts -->(.*?)<!-- thought ends -->'
-replacement = f'<!-- thought starts -->\n{thought}\n<!-- thought ends -->'
-new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
-
-# Write back to README.md
 with open("README.md", "w", encoding="utf-8") as f:
-    f.write(new_content)
+    f.write(f"# Thought of the Day\n\n{thought}\n")
+
